@@ -25,6 +25,7 @@ function checkFields() {
   const direccion = $("#validationCustom03").val();
   const mensaje = $("#validationCustom04").val();
   const terms = $("#invalidCheck").is(":checked");
+  const form = $("#contactForm")
 
   if (
     terms &&
@@ -36,6 +37,7 @@ function checkFields() {
     if ($("#exitoCheck").is(":checked")) {
       alert("Mansaje enviado");
       document.getElementById("contactForm").reset()
+      form.removeClass("was-validated");
     } else {
       alert("Error en el envio");
     }
