@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terrasol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: white; 
+        }
+        .navbar-custom .navbar-nav .nav-link:hover {
+            border-bottom: 1px solid white; 
+        }
+        .navbar-custom .navbar-nav .active {
+            font-weight: bold; 
+        }
+        .navbar-custom .navbar-toggler {
+            border-color: white; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid d-flex justify-content-between">
+            <!-- Aquí va el icono -->
+            <a class="navbar-brand" href="#"><img src="assets/img/download.jpg" alt="Icono" width="30" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Parcelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Solo terreno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Casa en Parcela</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#preguntas-frecuentes">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sección de Preguntas Frecuentes con los acordeones -->
+<section id="preguntas-frecuentes">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Pregunta 1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam iure pariatur maxime, distinctio nesciunt quia consequatur corporis obcaecati vitae quae veniam sit delectus ullam officiis deserunt eius quidem tempore harum?
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Pregunta 2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, dolore. Temporibus vero nihil fugit. Ea quo itaque, numquam vel dolorum voluptas pariatur dolor facilis iusto omnis? Natus ipsa molestiae deleniti.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
