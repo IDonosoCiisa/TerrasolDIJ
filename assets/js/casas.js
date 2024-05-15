@@ -6,7 +6,7 @@ fetch("../terrasolDIJ/assets/mockData/casas-mock.json")
     })
   );
 
-function createCardCasa(house) {
+function createCardCasa(data) {
   // Crear el elemento principal <div> con la clase "card col-md-4"
   const cardDiv = document.createElement("div");
   cardDiv.classList.add("card", "col-md-3");
