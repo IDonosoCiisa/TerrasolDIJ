@@ -1,12 +1,12 @@
-fetch("../terrasolDIJ/assets/mockData/casas-mock.json")
+fetch("../terrasolDIJ/assets/mockData/terrenos-mock.json")
   .then((response) => response.json())
   .then((json) =>
-    json.forEach((house) => {
-      createCardCasa(house);
+    json.forEach((terreno) => {
+      createCardTerreno(terreno);
     })
   );
 
-function createCardCasa(house) {
+function createCardTerreno(data) {
   // Crear el elemento principal <div> con la clase "card col-md-4"
   const cardDiv = document.createElement("div");
   cardDiv.classList.add("card", "col-md-3");
@@ -50,6 +50,7 @@ function createCardCasa(house) {
   // Crear el segundo <div> con la clase "col-md-12" para la descripción de la propiedad
   const descriptionDiv = document.createElement("div");
   descriptionDiv.classList.add("col-md-12", "px-3");
+  const secured = data.secured ? "cerrada" : "No cerrada";
   descriptionDiv.innerHTML = `
     <div class="card-body px-6">
         <h4 class="card-title">${data.city}</h4>
@@ -58,8 +59,8 @@ function createCardCasa(house) {
         <p class="card-text">Detalle propiedad</p>
         <p class="card-text">test precio: ${data.price}</p>
         <p class="card-text">test email: ${data.email}</p>
-        <p class="card-text">test house: ${data.squreMetersH}</p>
         <p class="card-text">test terreno: ${data.squreMetersT}</p>
+        <p class="card-text">test cerrada: ${secured}</p>
     </div>
 `;
 
@@ -67,6 +68,6 @@ function createCardCasa(house) {
   rowDiv.appendChild(carouselDiv);
   rowDiv.appendChild(descriptionDiv);
   cardDiv.appendChild(rowDiv);
-  casas = document.getElementById("casas");
-  casas.appendChild(cardDiv);
+  terrenos = document.getElementById("terrenos");
+  terrenos.appendChild(cardDiv);
 }
