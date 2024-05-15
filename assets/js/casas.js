@@ -59,6 +59,8 @@ function createCardCasa(data) {
         <p class="card-text">Detalle propiedad</p>
         <p class="card-text">test precio: ${data.price}</p>
         <p class="card-text">test email: ${data.email}</p>
+        <p class="card-text">test house: ${data.squreMetersH}</p>
+        <p class="card-text">test terreno: ${data.squreMetersT}</p>
     </div>
 `;
 
